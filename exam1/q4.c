@@ -1,18 +1,23 @@
 #include <stdio.h>
-#include <ctype.h>
 
 int main() {
     char ch;
     printf("Enter any character: ");
     scanf(" %c", &ch);
 
-    if (isalpha(ch)) {
+
+    if ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')) {
         printf("The character is an alphabet.\n");
-    } else if (isdigit(ch)) {
+    } 
+
+    else if (ch >= '0' && ch <= '9') {
         printf("The character is a digit.\n");
-    } else {
+    } 
+
+    else {
         printf("The character is a special character.\n");
     }
 
     return 0;
 }
+
