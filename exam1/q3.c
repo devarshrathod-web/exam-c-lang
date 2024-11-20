@@ -1,40 +1,40 @@
 #include <stdio.h>
 
 int main() {
-    int a, b, c, d, max;
+    int a, b, c, d;
     printf("Enter four numbers: ");
     scanf("%d %d %d %d", &a, &b, &c, &d);
+
 
     if (a > b) {
         if (a > c) {
             if (a > d) {
-                max = a;
+                printf("The maximum number is: %d\n", a);
             } else {
-                max = d;
+                printf("The maximum number is: %d\n", d);
             }
         } else {
             if (c > d) {
-                max = c;
+                printf("The maximum number is: %d\n", c);
             } else {
-                max = d;
+                printf("The maximum number is: %d\n", d);
             }
         }
     } else {
         if (b > c) {
             if (b > d) {
-                max = b;
+                printf("The maximum number is: %d\n", b);
             } else {
-                max = d;
+                printf("The maximum number is: %d\n", d);
             }
-        } else {
+        }  else {
             if (c > d) {
-                max = c;
+                printf("The maximum number is: %d\n", c);
             } else {
-                max = d;
+                printf("The maximum number is: %d\n", d);
             }
         }
     }
 
-    printf("The maximum number is: %d\n", max);
     return 0;
 }
